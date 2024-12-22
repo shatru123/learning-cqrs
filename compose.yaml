@@ -1,0 +1,18 @@
+﻿services:
+  webapi:
+    image: webapi
+    build:
+      context: .
+      dockerfile: WebApi/Dockerfile
+
+  webapiwithcontrollers:
+    image: webapiwithcontrollers
+    build:
+      context: .
+      dockerfile: WebApiWithControllers/Dockerfile
+
+  webappwithcontrollers:
+    image: webappwithcontrollers
+    build:
+      context: .
+      dockerfile: WebAppWithControllers/Dockerfile
